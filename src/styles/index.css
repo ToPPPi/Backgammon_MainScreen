@@ -1,0 +1,63 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  body {
+    @apply bg-dark-bg text-white;
+    margin: 0;
+    padding: 0;
+    font-family: 'Inter', sans-serif;
+    overflow-x: hidden;
+  }
+  
+  button {
+    @apply font-inter;
+  }
+}
+
+@layer components {
+  .neon-button {
+    @apply border-2 bg-transparent text-white py-4 px-8 text-lg font-semibold transition-all duration-300 ease-in-out transform hover:scale-105 focus:outline-none;
+  }
+  
+  .neon-button-green {
+    @apply neon-button border-accent-green hover:bg-accent-green hover:text-dark-bg focus:ring-2 focus:ring-accent-green focus:ring-opacity-50;
+  }
+  
+  .neon-button-purple {
+    @apply neon-button border-accent-purple hover:bg-accent-purple hover:text-dark-bg focus:ring-2 focus:ring-accent-purple focus:ring-opacity-50;
+  }
+}
+
+@layer utilities {
+  .animate-fadeIn {
+    animation: fadeIn 0.3s ease-in-out forwards;
+  }
+
+  .animate-fadeOut {
+    animation: fadeOut 0.3s ease-in-out forwards;
+  }
+
+  @keyframes fadeIn {
+    from {
+      opacity: 0;
+      transform: scale(0.95);
+    }
+    to {
+      opacity: 1;
+      transform: scale(1);
+    }
+  }
+
+  @keyframes fadeOut {
+    from {
+      opacity: 1;
+      transform: scale(1);
+    }
+    to {
+      opacity: 0;
+      transform: scale(0.95);
+    }
+  }
+}

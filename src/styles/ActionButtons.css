@@ -1,0 +1,89 @@
+.action-buttons {
+  margin-bottom: 40px;
+  padding: 20px 0;
+}
+
+.create-game-button {
+  width: 100%;
+  padding: 20px;
+  background: linear-gradient(135deg, #00FF55, #00B8FF);
+  color: #03142A;
+  font-size: 1.2rem;
+  font-weight: 700;
+  border: none;
+  border-radius: 12px;
+  cursor: pointer;
+  letter-spacing: 1px;
+  text-transform: uppercase;
+  transition: all 0.3s ease;
+  margin-bottom: 25px;
+}
+
+.create-game-button:hover {
+  transform: translateY(-3px);
+  box-shadow: 0 5px 20px rgba(0, 255, 85, 0.4);
+}
+
+.balance-buttons {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 15px;
+  margin-top: 15px;
+}
+
+.balance-button {
+  padding: 16px;
+  border-radius: 10px;
+  font-size: 1rem;
+  font-weight: 600;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 8px;
+  letter-spacing: 0.5px;
+  transition: all 0.3s ease;
+}
+
+.balance-button:hover {
+  transform: translateY(-2px);
+}
+
+.deposit-button {
+  background: rgba(0, 255, 85, 0.1);
+  color: #00FF55;
+  border: 2px solid #00FF55;
+}
+
+.deposit-button:hover {
+  background: #00FF55;
+  color: #03142A;
+  box-shadow: 0 5px 15px rgba(0, 255, 85, 0.3);
+}
+
+.withdraw-button {
+  background: rgba(139, 0, 255, 0.1);
+  color: #8B00FF;
+  border: 2px solid #8B00FF;
+}
+
+.withdraw-button:hover {
+  background: #8B00FF;
+  color: #03142A;
+  box-shadow: 0 5px 15px rgba(139, 0, 255, 0.3);
+}
+
+@media (max-width: 768px) {
+  .create-game-button {
+    padding: 16px;
+    font-size: 1.1rem;
+  }
+
+  .balance-buttons {
+    grid-template-columns: 1fr;
+  }
+
+  .balance-button {
+    padding: 14px;
+  }
+}
